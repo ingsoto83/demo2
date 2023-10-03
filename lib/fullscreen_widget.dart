@@ -13,10 +13,16 @@ class FullscreenWidget extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.purple,
-        child: Center(
-          child: Text("HOLA", style: TextStyle(fontSize: 80, color: Colors.white30),),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/img/fondo2.jpg'),
+            fit: BoxFit.cover
+          )
         ),
+        child: Center(
+          child: Text("Travel App" , style: GoogleFonts.sigmar(fontSize: 40, color: Colors.white),),
+        ),
+        /*child: Image.asset('assets/img/fondo2.jpg', fit: BoxFit.cover,),*/
       ),
     );
   }
