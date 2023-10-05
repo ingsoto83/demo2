@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -20,7 +21,12 @@ class FullscreenWidget extends StatelessWidget {
           )
         ),
         child: Center(
-          child: Text("Travel App" , style: GoogleFonts.sigmar(fontSize: 40, color: Colors.white),),
+          child: Container(
+            height: 100,
+            width: double.infinity,
+            color: Colors.black54,
+            child: Text("Travel App" , style: GoogleFonts.sigmar(fontSize: 40, color: Colors.white),),
+          )
         ),
         /*child: Image.asset('assets/img/fondo2.jpg', fit: BoxFit.cover,),*/
       ),
