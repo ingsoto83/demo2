@@ -8,11 +8,10 @@ class TravelWidget extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     Widget imageSection = Container(
-        width: width,
         height: height * .4,
+        width: width,
         child: Image.asset('assets/img/place.jpg', fit: BoxFit.cover,)
     );
-
     Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
       child: Row(
@@ -21,14 +20,11 @@ class TravelWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: const Text(
-                    "Sierra de San Lorenzo",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Text("Sierra de San Lorenzo", style: TextStyle(fontWeight: FontWeight.bold),),
                 ),
-                Text("Saltillo, Coahuila, México", style:TextStyle(color: Colors.grey[500]))
+                Text("Saltillo, Coahuila, México"),
               ],
             ),
           ),
