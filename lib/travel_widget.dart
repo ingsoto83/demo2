@@ -52,6 +52,10 @@ class TravelWidget extends StatelessWidget {
     );
     
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.arrow_back_ios),
+        onPressed: ()=>Navigator.pop(context),
+      ),
       body: OrientationBuilder(
         builder: (context, orientation) {
           return orientation == Orientation.portrait ?
